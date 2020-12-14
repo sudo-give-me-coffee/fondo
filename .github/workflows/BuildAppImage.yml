@@ -14,5 +14,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a multi-line script
         run: |
+          sudo apt install meson valac libgranite-dev libgtk-3-dev libjson-glib-dev libsoup2.4-dev
           ./app install-deps
           ./app install
